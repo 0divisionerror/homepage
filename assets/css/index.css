@@ -50,7 +50,7 @@ header.scrolled {
   box-shadow: 0 0 8px #00000050;
 }
 
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 63.99em) {
   header.scrolled {
     background-color: transparent;
     box-shadow: none;
@@ -114,6 +114,14 @@ header a.drawer-menu-item {
 
   header a.drawer-menu-item {
     font-size: 1.2vw;
+  }
+
+  #preact-i18n.scrolled {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px #00000050;
+  }
+  .drawer-dropdown-menu {
+    width: 5em !important;
   }
 
   .lang-en header a.drawer-menu-item {

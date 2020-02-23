@@ -1,11 +1,14 @@
 document.onscroll = () => {
   const windowTop = document.documentElement.scrollTop;
-  const element = document.getElementsByTagName('header')[0];
+  const headerElement = document.getElementsByTagName('header')[0];
+  const i18nElement = document.getElementById('preact-i18n');
 
   if (windowTop > 80) {
-    element.classList.add('scrolled');
+    headerElement.classList.add('scrolled');
+    i18nElement.classList.add('scrolled');
   } else {
-    element.classList.remove('scrolled');
+    headerElement.classList.remove('scrolled');
+    i18nElement.classList.remove('scrolled');
   }
 };
 const navbar = () => {
